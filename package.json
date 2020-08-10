@@ -1,0 +1,25 @@
+{
+  "name": "dvsa-lambda-starter",
+  "version": "1.0.0",
+  "description": "A package to act as a starter for typescript lambdas ",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "constributers": [
+    {
+      "name": "Shaun Hare",
+      "email": "shaun.hare@dvsa.gov.uk"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@dvsa/eslint-config-ts": "^1.0.1",
+    "@types/aws-lambda": "^8.10.59",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "eslint": "^7.6.0",
+    "typescript": "^3.9.7"
+  }
+}
