@@ -93,6 +93,7 @@ dist
 
 # Serverless directories
 .serverless/
+.aws-sam/build
 
 # FuseBox cache
 .fusebox/
