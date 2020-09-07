@@ -7,8 +7,13 @@
     "resolveJsonModule": true,
     "noImplicitAny": true,
     "preserveConstEnums": true,
-    "strict":true,
-    "rootDir":"./src",
-    "outDir": "./dist"
-  }
+    "strict": true,
+    "outDir": "./dist",
+  },
+  "include": [
+    "src/**/*.ts", "tests/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+  ]
 }
