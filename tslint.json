@@ -5,8 +5,8 @@
     "target": "es6",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "strict":true,
-    "rootDir":"./src",
+    "strict": true,
+    "rootDir": "./src",
     "outDir": "./dist"
   }
 }
