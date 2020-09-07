@@ -4,7 +4,7 @@
   "description": "A package to act as a starter for typescript lambdas ",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint '*/**/*.{ts}' --quiet --fix",
+    "lint": "eslint '*/**/*.ts' --quiet --fix",
     "test": "jest --coverage"
   },
   "constributers": [
