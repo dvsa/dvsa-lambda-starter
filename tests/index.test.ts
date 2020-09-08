@@ -1,4 +1,4 @@
-import { handler } from "../src/handler/index";
+import { lambdaHandler } from "../src/handler/index";
 import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
 
 describe("Test index", () => {
@@ -7,7 +7,7 @@ describe("Test index", () => {
         const eventParams: Partial<APIGatewayProxyEvent> = { queryStringParameters: queryParameters };
         const event: APIGatewayProxyEvent = <APIGatewayProxyEvent>eventParams;
 
-        const res: APIGatewayProxyResult = await handler(event);
+        const res: APIGatewayProxyResult = await lambdaHandler(event);
 
         expect(res.statusCode).toBe(200);
         expect(res.body).toEqual(`Queries: ${JSON.stringify(queryParameters)}`);
