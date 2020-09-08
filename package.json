@@ -4,7 +4,7 @@
   "description": "A package to act as a starter for typescript lambdas ",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "jest --coverage"
   },
   "constributers": [
     {
@@ -17,9 +17,12 @@
   "devDependencies": {
     "@dvsa/eslint-config-ts": "^1.0.1",
     "@types/aws-lambda": "^8.10.59",
+    "@types/jest": "^26.0.13",
     "@typescript-eslint/eslint-plugin": "^3.8.0",
     "@typescript-eslint/parser": "^3.8.0",
     "eslint": "^7.6.0",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
     "typescript": "^3.9.7"
   }
 }
