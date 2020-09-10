@@ -1,16 +1,11 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "esModuleInterop": true,
     "target": "es2015",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "noImplicitAny": true,
-    "preserveConstEnums": true,
-    "strict":true,
-    "outDir": "./dist"
+    "module": "commonjs",
+    "allowJs": true,
+    "checkJs": true,
+    "sourceMap": true,
+    "esModuleInterop": true
   },
-  "include": [
-    "src/**/*.ts", "tests/**/*.ts"
-  ],
+  "include": ["src/**/*.ts", "tests/**/*.ts"]
 }

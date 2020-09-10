@@ -13,6 +13,21 @@
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
       "port": 9229
-    } 
+    },
+    {
+      "name": "IndexLambdaFunction",
+      "type": "node",
+      "request": "attach",
+      "address": "localhost",
+      "port": 5858,
+      "localRoot": "${workspaceRoot}/.aws-sam/build/IndexLambdaFunction",
+      "remoteRoot": "/var/task",
+      "protocol": "inspector",
+      "stopOnEntry": false,
+      "outFiles": [
+        "${workspaceRoot}/.aws-sam/build/IndexLambdaFunction/app.js"
+      ],
+      "sourceMaps": true
+    }
   ]
 }
