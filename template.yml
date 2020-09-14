@@ -2,23 +2,24 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 
 Resources:
-    IndexLambdaFunction:
-      Type: 'AWS::Serverless::Function'
-      Properties:
-        CodeUri: src/handler/
-        Handler: index.lambdaHandler
-        Runtime: nodejs12.x  
-        Events:
-          IndexLambda:
-            Type: Api
-            Properties:
-              Path: /
-              Method: get
+  IndexLambdaFunction:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      CodeUri: 'src/handler/'
+      Handler: 'index.lambdaHandler'
+      Runtime: 'nodejs12.x'
+      Events:
+        IndexLambda:
+          Type: 'Api'
+          Properties:
+            Path: '/'
+            Method: 'get'
 
 Outputs:
   IndexLambdaApi:
-    Description: "API Gateway endpoint URL for Prod stage for Index Lambda function"
-    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
+    Description: 'API Gateway endpoint URL for Prod stage for Index Lambda function'
+    Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/'
   IndexLambdaFunction:
-    Description: "Index Lambda Function ARN"
-    Value: !GetAtt IndexLambdaFunction.Arn
+    Description: 'Index Lambda Function ARN'
+    Value: !GetAtt 'IndexLambdaFunction.Arn'
+  

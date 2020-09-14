@@ -1,0 +1,13 @@
+{    
+  "eslint.enable": true,
+  "eslint.options": { "configFile": ".eslintrc" },
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.rulers": [120],
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false,
+    "source.fixAll.eslint": true
+  },
+}
