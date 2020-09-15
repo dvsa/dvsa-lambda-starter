@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "@dvsa/eslint-config-ts"
+  ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "rules": {
+    "max-len": ["error", { "code": 120 }] // Set default max line length
+  }
+}
