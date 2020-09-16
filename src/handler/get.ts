@@ -5,16 +5,17 @@ import { createLogger, Logger } from '../util/logger';
  * Lambda Handler
  *
  * @param {APIGatewayProxyEvent} event
+ * @param {Context} context
  * @returns {Promise<APIGatewayProxyResult>}
  */
-export const lambdaHandler = async (event: APIGatewayProxyEvent, context: Context): Promise<APIGatewayProxyResult> => {
+export const handler = async (event: APIGatewayProxyEvent, context: Context): Promise<APIGatewayProxyResult> => {
   const logger: Logger = createLogger(event, context);
-  const queries = JSON.stringify(event.queryStringParameters);
+  const queryParams: Record<string, string> = event.queryStringParameters;
 
-  logger.info(`The following queries were found: ${queries}`);
+  logger.info(JSON.stringify({ queryParams }));
 
   return Promise.resolve({
     statusCode: 200,
-    body: `Queries: ${queries}`,
+    body: JSON.stringify({ queryParams }),
   });
 };

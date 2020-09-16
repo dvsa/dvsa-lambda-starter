@@ -7,7 +7,8 @@
     "lint": "eslint '*/**/*.ts' --quiet --fix",
     "test": "jest --coverage",
     "build:dev": "NODE_ENV=development webpack-cli",
-    "start:dev": "sam local start-api"
+    "start:dev": "sam local start-api",
+    "invoke": "sam local invoke"
   },
   "constributers": [
     {
