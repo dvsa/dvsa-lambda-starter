@@ -4,6 +4,7 @@ A starting pattern for AWS lambda in Typescript
 
 **Requirements**
 
+- Docker && Docker Compose
 - node v12.18.3
 - [SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
 
@@ -16,6 +17,7 @@ A starting pattern for AWS lambda in Typescript
 
 **Run Lambdas Locally**
 
+- Start dynamoDB container: `docker-compose up -d`
 - `npm run start:dev`
 - To ensure that the lambdas have been successfully served, run the following command in a separate terminal:
     - `curl --request GET http://localhost:3000/?message=hello%20world`
@@ -57,3 +59,11 @@ This shows an example of what the log looks like from the first invoked lambda:
 This shows an example of what the logs look like from the second invoked lambda (called via the first lambda):
 ```
 2020-09-10T17:05:31.627Z	32ff455b-057d-1dd7-98b8-7034bf182dc8	INFO	{"apiRequestId":"d9222e0a-6bd9-49e0-84dd-ffe0680bd141","correlationId":"5ff37fce-5ace-114c-9120-a1406cc8d11d","message":"Here's a gnarly info message from lambda 2 - notice how my correlationId is the same as the lambda 1"}
+```
+
+**Database migrations**
+
+Inside `ops/local` directory there are simple bash scripts for creating dynamoDB tables and populating them with dummy data. For example, in order to create and populate `VehicleTestStations` table with test data, run the following command inside `ops/local` directory:
+```bash
+./create-vehicle-test-stations-table.sh && ./populate-vehicle-test-stations-table.sh
+```

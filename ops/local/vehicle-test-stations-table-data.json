@@ -1,0 +1,162 @@
+{
+  "VehicleTestStations": [
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "614F8C80-EF3F-43A2-B02D-9061A3144232" },
+          "name": { "S": "Batz - Ortiz" },
+          "address1": { "S": "50593 Batz Viaduct" },
+          "address2": { "S": "Haag Ridges" },
+          "town": { "S": "Greenford" },
+          "postcode": { "S": "UA6 7IL" },
+          "general_notes": { "S": "A - All Vehicles and Trailers (PSV GV TRLs)" },
+          "url": { "S": "http://jazmyne.net" },
+          "email": { "S": "Minnie91@yahoo.com" },
+          "phone": { "S": "01111 111111" },
+          "fax": { "S": "00111 111111" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "D47C2A01-E30B-4D27-8C83-72F1E93CECCE" },
+          "name": { "S": "Gutmann Inc" },
+          "address1": { "S": "01922 Hahn Hill" },
+          "town": { "S": "London" },
+          "postcode": { "S": "SL5 1EF" },
+          "general_notes": { "S": "A - All Vehicles and Trailers (PSV GV TRLs)" },
+          "url": { "S": "https://esteban.biz" },
+          "email": { "S": "Bryce_Medhurst@yahoo.com" },
+          "phone": { "S": "02222 222222" },
+          "fax": { "S": "00222 222222" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "98A96E48-1213-4994-AD91-234D2D196CD0" },
+          "name": { "S": "Reinger, Anderson and Reichel" },
+          "address1": { "S": "88074 Hegmann Prairie" },
+          "town": { "S": "Luton" },
+          "postcode": { "S": "UO5 8AS" },
+          "general_notes": { "S": "C - All Public Vehicles" },
+          "url": { "S": "http://gust.net" },
+          "email": { "S": "Narciso.Wisozk@hotmail.com" },
+          "phone": { "S": "03333 333333" },
+          "fax": { "S": "00333 333333" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "40C3278B-CB72-4D5D-8634-616275BC1257" },
+          "name": { "S": "DuBuque Inc" },
+          "address1": { "S": "255 Goodwin Creek" },
+          "town": { "S": "Livingston" },
+          "postcode": { "S": "EH88 8JA" },
+          "general_notes": { "S": "F - All Rigids (Including Artics)" },
+          "url": { "S": "http://bert.biz" },
+          "email": { "S": "Garrison.Nienow14@hotmail.com" },
+          "phone": { "S": "04444 44444" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "941E0D96-0D40-403E-A227-02CB775F0EFB" },
+          "name": { "S": "Cartwright - Lowe" },
+          "address1": { "S": "500 Ondricka Springs" },
+          "town": { "S": "Birkenhead" },
+          "postcode": { "S": "UJ41 5ES" },
+          "general_notes": { "S": "F - All Rigids (Including Artics)" },
+          "url": { "S": "https://kailee.org" },
+          "email": { "S": "Dewitt68@yahoo.com" },
+          "phone": { "S": "05555 555555" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "1B938BE6-BB32-45F6-9AD2-B5BF29606F71" },
+          "name": { "S": "Wisozk - Jenkins" },
+          "address1": { "S": "359 Bahringer Islands" },
+          "address2": { "S": "Torp Skyway" },
+          "town": { "S": "Milton Keynes" },
+          "postcode": { "S": "JK12 9QD" },
+          "general_notes": { "S": "C - All Public Vehicles" },
+          "url": { "S": "https://callie.net" },
+          "email": { "S": "Freda.Padberg33@gmail.com" },
+          "phone": { "S": "06666 666666" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "1D62ABFD-F03D-4DE0-9ED5-8C02F97C553D" },
+          "name": { "S": "Beier, Jacobi and Kautzer" },
+          "address1": { "S": "39760 Rau Mountain" },
+          "town": { "S": "Southend-On-Sea" },
+          "postcode": { "S": "AA2 5CY" },
+          "general_notes": { "S": "F - All Rigids (Including Artics)" },
+          "url": { "S": "https://wyman.info" },
+          "email": { "S": "Emelia.Bayer@hotmail.com" },
+          "phone": { "S": "07777 777777" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "AF670FA7-6893-45B9-8032-EFBDB17FD60F" },
+          "name": { "S": "Orn, Ondricka and Kshlerin" },
+          "address2": { "S": "Maggio Grove" },
+          "town": { "S": "Blandford Forum" },
+          "postcode": { "S": "DT34 9AU" },
+          "general_notes": { "S": "A - All Vehicles and Trailers (PSV GV TRLs)" },
+          "url": { "S": "http://fabiola.name" },
+          "email": { "S": "Raymond78@gmail.com" },
+          "phone": { "S": "08888 888888" },
+          "fax": { "S": "00888 888888" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "06EF991F-215A-4801-9490-14A8D0E5A03B" },
+          "name": { "S": "Murray Group" },
+          "address1": { "S": "880 Brekke Neck" },
+          "address2": { "S": "Weber Mills" },
+          "town": { "S": "Leicester" },
+          "postcode": { "S": "LI4 4GH" },
+          "general_notes": { "S": "A - All Vehicles and Trailers (PSV GV TRLs)" },
+          "url": { "S": "https://alvah.name" },
+          "email": { "S": "Opal_Morissette94@yahoo.com" },
+          "phone": { "S": "09999 999999" },
+          "fax": { "S": "00999 999999" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": { "S": "00BC2870-210E-42A5-BFB1-A8D50AF99A8E" },
+          "name": { "S": "Walsh LLC" },
+          "address1": { "S": "575 Angeline Dale" },
+          "town": { "S": "Barrow-In-Furness" },
+          "postcode": { "S": "LE14 5IY" },
+          "general_notes": { "S": "A - All Vehicles and Trailers (PSV GV TRLs)" },
+          "url": { "S": "https://jerod.net" },
+          "email": { "S": "Pat_Batz@yahoo.com" },
+          "phone": { "S": "01111 111110" }
+        }
+      }
+    }
+  ]
+}
