@@ -2,24 +2,63 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 
 Resources:
-  IndexLambdaFunction:
-    Type: 'AWS::Serverless::Function'
-    Properties:
-      CodeUri: 'src/handler/'
-      Handler: 'index.lambdaHandler'
-      Runtime: 'nodejs12.x'
-      Events:
-        IndexLambda:
-          Type: 'Api'
-          Properties:
-            Path: '/'
-            Method: 'get'
+    GetLambdaFunction:
+      Type: 'AWS::Serverless::Function'
+      Properties:
+        CodeUri: src/handler/
+        Handler: get.handler
+        Runtime: nodejs12.x  
+        Events:
+          GetLambdaApi:
+            Type: Api
+            Properties:
+              Path: /
+              Method: get
+    
+    PostLambdaFunction:
+      Type: 'AWS::Serverless::Function'
+      Properties:
+        CodeUri: src/handler/
+        Handler: post.handler
+        Runtime: nodejs12.x  
+        Events:
+          PostLambdaApi:
+            Type: Api
+            Properties:
+              Path: /
+              Method: post
+    
+    CloudWatchEventLambdaFunction:
+      Type: 'AWS::Serverless::Function'
+      Properties:
+        CodeUri: src/handler/
+        Handler: cloudWatchEvent.handler
+        Runtime: nodejs12.x  
+        Events:
+          CloudWatchEventLambdaSchedule:
+            Type: Schedule
+            Properties:
+              Schedule: 'rate(1 minute)'
+              # Schedule: 'cron(1 * * * ? *)'
 
 Outputs:
-  IndexLambdaApi:
-    Description: 'API Gateway endpoint URL for Prod stage for Index Lambda function'
-    Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/'
-  IndexLambdaFunction:
-    Description: 'Index Lambda Function ARN'
-    Value: !GetAtt 'IndexLambdaFunction.Arn'
+  GetLambdaApi:
+    Description: "API Gateway endpoint URL for GetLambdaFunction on dev stage"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Dev/"
+  GetLambdaFunction:
+    Description: "Get Lambda Function ARN"
+    Value: !GetAtt GetLambdaFunction.Arn
+
+  PostLambdaApi:
+    Description: "API Gateway endpoint URL for GetLambdaFunction on dev stage"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Dev/"
+  PostLambdaFunction:
+    Description: "Post Lambda Function ARN"
+    Value: !GetAtt PostLambdaFunction.Arn
   
+  CloudWatchEventLambdaSchedule:
+    Description: "CloudWatch Event schedule for CloudWatchEventLambdaFunction"
+    Value: "rate(1 minute)"
+  CloudWatchEventLambdaFunction:
+    Description: "CloudWatch Event Lambda Function ARN"
+    Value: !GetAtt CloudWatchEventLambdaFunction.Arn
