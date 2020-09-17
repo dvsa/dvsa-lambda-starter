@@ -3,7 +3,7 @@ version: '3'
 services:
   dynamodb:
     image: amazon/dynamodb-local:latest
-    container_name: hvt-lamda-dynamodb
+    container_name: hvt-lambda-dynamodb
     command: -jar DynamoDBLocal.jar -sharedDb
     ports:
       - '8000:8000'
