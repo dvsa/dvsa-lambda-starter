@@ -17,7 +17,6 @@ A starting pattern for AWS lambda in Typescript
 
 **Run Lambdas Locally**
 
-- Start dynamoDB container: `docker-compose up -d`
 - `npm run start:dev`
 - To ensure that the lambdas have been successfully served, run the following command in a separate terminal:
     - `curl --request GET http://localhost:3000/?message=hello%20world`
