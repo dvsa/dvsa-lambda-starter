@@ -7,35 +7,35 @@ Resources:
       Properties:
         CodeUri: src/handler/
         Handler: get.handler
-        Runtime: nodejs12.x  
+        Runtime: nodejs12.x
         Events:
           GetLambdaApi:
             Type: Api
             Properties:
               Path: /
               Method: get
-    
+
     PostLambdaFunction:
       Type: 'AWS::Serverless::Function'
       Properties:
         CodeUri: src/handler/
         Handler: post.handler
-        Runtime: nodejs12.x  
+        Runtime: nodejs12.x
         Events:
           PostLambdaApi:
             Type: Api
             Properties:
               Path: /
               Method: post
-    
-    CloudWatchEventLambdaFunction:
+
+    CWEventLambdaFunction:
       Type: 'AWS::Serverless::Function'
       Properties:
         CodeUri: src/handler/
         Handler: cloudWatchEvent.handler
-        Runtime: nodejs12.x  
+        Runtime: nodejs12.x
         Events:
-          CloudWatchEventLambdaSchedule:
+          CWEventLambdaSchedule:
             Type: Schedule
             Properties:
               Schedule: 'rate(1 minute)'
@@ -55,10 +55,10 @@ Outputs:
   PostLambdaFunction:
     Description: "Post Lambda Function ARN"
     Value: !GetAtt PostLambdaFunction.Arn
-  
-  CloudWatchEventLambdaSchedule:
+
+  CWEventLambdaSchedule:
     Description: "CloudWatch Event schedule for CloudWatchEventLambdaFunction"
     Value: "rate(1 minute)"
-  CloudWatchEventLambdaFunction:
+  CWEventLambdaFunction:
     Description: "CloudWatch Event Lambda Function ARN"
-    Value: !GetAtt CloudWatchEventLambdaFunction.Arn
+    Value: !GetAtt CWEventLambdaFunction.Arn
