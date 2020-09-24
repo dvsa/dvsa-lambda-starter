@@ -27,7 +27,7 @@ export class Logger {
 export const createLogger = (event: APIGatewayProxyEvent, context: Context): Logger => {
   const lambdaRequestId: string = context.awsRequestId;
   const apiRequestId: string = event?.requestContext.requestId;
-  const correlationId: string = event?.headers['X-Correlation-Id'] || lambdaRequestId;
+  const correlationId: string = event?.headers?.['X-Correlation-Id'] || lambdaRequestId;
 
   return new Logger(apiRequestId, correlationId);
 };
