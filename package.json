@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint '*/**/*.ts' --quiet --fix",
+    "lint:ci": "eslint '*/**/*.ts'",
     "test": "jest --coverage",
+    "test:ci": "jest --ci",
     "build:dev": "NODE_ENV=development webpack-cli",
     "start:dev": "sam local start-api",
     "invoke": "sam local invoke"
