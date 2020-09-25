@@ -16,7 +16,7 @@ See the README for how to run the tests, ensure you've run them before contribut
 
 ## Submitting changes
 
-To add changes, make a new appropriately names branch off master, for example for a new feature use `feature/add-extra-endpoint` and for bug use `bug/fix-returning-wrong-status`.
+To add changes, make a new appropriately names branch off master, for example for a new feature use `feature/<jiraref>-add-extra-endpoint` and for bug use `bug/<jiraref>-fix-returning-wrong-status`.
 
 We don't squash merge to preserve the history of the work so always write clear log message for your commits. You can squash commits if you feel they could be tidied up. One-line messages are fine for small changes, but bigger changes should look like this:
 

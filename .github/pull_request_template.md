@@ -16,3 +16,5 @@ Related issue: [JIRA_TICKET_NUMBER](LINK_TO_JIRA_TICKET)
 
 - [ ] I have performed a self-review of my own code
 - [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] I have added test coverage to the JIRA ticket 
+- [ ] Commit contains the JIRA ticket number
