@@ -16,7 +16,11 @@ See the README for how to run the tests, ensure you've run them before contribut
 
 ## Submitting changes
 
-To add changes, make a new appropriately names branch off master, for example for a new feature use `feature/add-extra-endpoint` and for bug use `bug/fix-returning-wrong-status`.
+To add changes, make a new branch off master.
+
+If you're not a member of the project or you're outside of the DVSA organization, you'll need to fork the project and create a branch on your fork. See full instructions [here](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/working-with-forks).
+
+We recommended the following branch naming, for a new feature use `feature/<issue-number>-add-extra-endpoint` and for bug use `bug/<issue-number>-fix-returning-wrong-status`.
 
 We don't squash merge to preserve the history of the work so always write clear log message for your commits. You can squash commits if you feel they could be tidied up. One-line messages are fine for small changes, but bigger changes should look like this:
 
