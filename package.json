@@ -10,7 +10,7 @@
     "start:dev": "sam local start-api",
     "invoke": "sam local invoke"
   },
-  "constributers": [
+  "contributors": [
     {
       "name": "Shaun Hare",
       "email": "shaun.hare@dvsa.gov.uk"
