@@ -4,7 +4,7 @@ export class Logger {
   logFormat: string;
 
   constructor(apiRequestId: string, correlationId: string) {
-    this.logFormat = JSON.stringify({ apiRequestId, correlationId, message: '%s' });
+    this.logFormat = `{ "apiRequestId": "${apiRequestId}", "correlationId": "${correlationId}", "message": "%s" }`;
   }
 
   public debug(msg: string): void {
