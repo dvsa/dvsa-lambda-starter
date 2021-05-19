@@ -1,0 +1,19 @@
+
+  sam-local:
+    image: sam-local:1
+    command: local start-api --docker-volume-basedir "$PWD/../localdev/sam-local/key-creation" --host 0.0.0.0 --region eu-west-1 --docker-network localdev_localdev #--debug
+    ports:
+      - '3000:3000'
+      - '3001:3001'
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ../localdev/sam-local/key-creation:/var/opt
+    depends_on:
+      - "dynamodb"
+    links:
+      - "dynamodb"
+    networks:
+      localdev:
+        aliases:
+          - 'sam-local'
+
