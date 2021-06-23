@@ -13,9 +13,15 @@ A starting pattern for AWS lambda in Typescript
 - `npm i`
 - `npm run build:dev`
 
+**Watch**
+
+To watch for changes and automatically trigger a new build:
+- `npm run watch:dev`
+
 
 **Run Lambdas Locally**
 
+- Build the files first
 - `npm run start:dev`
 - To ensure that the lambdas have been successfully served, run the following command in a separate terminal:
     - `curl --request GET http://localhost:3000/?message=hello%20world`
