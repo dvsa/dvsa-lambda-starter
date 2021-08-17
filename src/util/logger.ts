@@ -6,9 +6,9 @@ export class Logger {
   constructor(apiRequestId: string, correlationId: string) {
     this.logFormat = `{ "apiRequestId": "${apiRequestId}", "correlationId": "${correlationId}", "message": "%s" }`;
   }
-  
+
   public trace(msg: string): void {
-    console.trace(this.logFormat, msg); 
+    console.trace(this.logFormat, msg);
   }
 
   public debug(msg: string): void {
