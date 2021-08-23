@@ -52,6 +52,15 @@ describe('Test logger', () => {
       );
     });
 
+  test('logger.trace() calls console.trace() with expected parameters', () => {
+    const logger: Logger = new Logger('', '');
+    console.trace = jest.fn();
+
+    logger.trace('hello');
+
+    expect(console.trace).toHaveBeenCalledWith(logger.logFormat, 'hello');
+  });
+
   test('logger.debug() calls console.debug() with expected parameters', () => {
     const logger: Logger = new Logger('', '');
     console.debug = jest.fn();
