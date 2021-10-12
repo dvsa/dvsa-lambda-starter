@@ -1,8 +1,14 @@
-{    
+{
+  "files.associations": {
+    ".eslintrc": "jsonc",
+  },
+
+  "javascript.validate.enable": false,
+  "javascript.format.enable": false,
+  "typescript.format.enable": false,
+
   "eslint.enable": true,
-  "eslint.options": { "configFile": ".eslintrc" },
-  "editor.detectIndentation": false,
-  "editor.tabSize": 2,
+
   "editor.rulers": [120],
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnSave": false,
