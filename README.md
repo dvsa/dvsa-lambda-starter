@@ -35,7 +35,7 @@ To watch for changes and automatically trigger a new build:
 - Add a breakpoint to the lambda being tested (`src/handler/get.ts`)
 - Run the debug config from VS Code that corresponds to lambda being tested (`GetLambdaFunction`)
 - Send an HTTP request to the lambda's URI (`curl --request GET http://localhost:3000/?message=hello%20world`)
-- To debug CloudWatch Event lambdas: `npm run invoke -- CloudWatchEventLambdaFunction -d 5858`
+- To debug CloudWatch Event lambdas: `npm run invoke -- CWEventLambdaFunction -d 5858`
 
 
 **Tests**
