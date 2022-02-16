@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import type { APIGatewayProxyEvent, APIGatewayProxyResult, Context } from 'aws-lambda';
 import { createLogger, Logger } from '../util/logger';
 
