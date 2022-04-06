@@ -8,6 +8,11 @@ A starting pattern for AWS lambda in Typescript
 - [SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
 - npm 7+
 
+**Prerequisites**
+- Create a `.env`
+    ```shell
+    cp .env.example .env
+    ```
 
 **Build**
 
