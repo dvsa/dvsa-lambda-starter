@@ -4,6 +4,8 @@ import type {
 import { v4 } from 'uuid';
 import { handler } from '../../src/handler/post';
 
+jest.mock('../../src/util/logger.ts');
+
 describe('Test Post Lambda Function', () => {
   test('should return 201 with the body', async () => {
     const body: Record<string, string> = { message: 'Hello world!' };

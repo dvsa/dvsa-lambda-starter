@@ -4,6 +4,8 @@ import type {
 import { v4 } from 'uuid';
 import { handler } from '../../src/handler/get';
 
+jest.mock('../../src/util/logger.ts');
+
 describe('Test Get Lambda Function', () => {
   test('should return 200 with the query parameters', async () => {
     const queryStringParameters: Record<string, string> = { message: 'Hello world!' };
