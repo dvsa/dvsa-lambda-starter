@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import type { Context, ScheduledEvent } from 'aws-lambda';
 import { createLogger, Logger } from '../util/logger';
 
