@@ -20,7 +20,7 @@ describe('Test Get Lambda Function', () => {
 
     const res: APIGatewayProxyResult = await handler(eventMock, contextMock);
 
-    expect(res.statusCode).toBe(200);
+    expect(res.statusCode).toBe(300);
     expect(res.body).toEqual(JSON.stringify({ queryParams: queryStringParameters }));
   });
 });
