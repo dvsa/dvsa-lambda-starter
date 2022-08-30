@@ -1,21 +1,24 @@
 import 'dotenv/config';
-import type { APIGatewayProxyEvent, APIGatewayProxyResult, Context } from 'aws-lambda';
+import type { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
 import logger from '../util/logger';
 
-/**
- * Lambda Handler
- *
- * @param {APIGatewayProxyEvent} event
- * @param {Context} context
- * @returns {Promise<APIGatewayProxyResult>}
- */
-export const handler = async (event: APIGatewayProxyEvent, context: Context): Promise<APIGatewayProxyResult> => {
-  const queryParams: Record<string, string> = event.queryStringParameters;
+// eslint-disable-next-line @typescript-eslint/require-await
+export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
+  if (!event.queryStringParameters) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({
+        message: 'Missing query string parameters',
+      }),
+    };
+  }
+
+  const queryParams = event.queryStringParameters;
 
   logger.info(queryParams);
 
-  return Promise.resolve({
+  return {
     statusCode: 200,
     body: JSON.stringify({ queryParams }),
-  });
+  };
 };
