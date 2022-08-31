@@ -1,5 +1,5 @@
 import type {
-  APIGatewayProxyEvent, APIGatewayProxyResult, Context, APIGatewayEventRequestContext,
+  APIGatewayProxyEvent, APIGatewayProxyResult, APIGatewayEventRequestContext,
 } from 'aws-lambda';
 import { v4 } from 'uuid';
 import { handler } from '../../src/handler/get';
@@ -16,9 +16,8 @@ describe('Test Get Lambda Function', () => {
       requestContext,
       headers,
     };
-    const contextMock: Context = <Context> { awsRequestId: v4() };
 
-    const res: APIGatewayProxyResult = await handler(eventMock, contextMock);
+    const res: APIGatewayProxyResult = await handler(eventMock);
 
     expect(res.statusCode).toBe(200);
     expect(res.body).toEqual(JSON.stringify({ queryParams: queryStringParameters }));
