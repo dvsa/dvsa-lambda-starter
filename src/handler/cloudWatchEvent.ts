@@ -1,19 +1,13 @@
 import 'dotenv/config';
-import type { Context, ScheduledEvent } from 'aws-lambda';
+import type { ScheduledEvent } from 'aws-lambda';
 import logger from '../util/logger';
 
-/**
- * Lambda Handler
- *
- * @param {ScheduledEvent} event
- * @param {Context} context
- * @returns {Promise<Record<string, unknown>>}
- */
-export const handler = async (event: ScheduledEvent, context: Context): Promise<Record<string, unknown>> => {
+// eslint-disable-next-line @typescript-eslint/require-await
+export const handler = async (event: ScheduledEvent): Promise<Record<string, number | string>> => {
   logger.info('Cloudwatch event successfully triggered!');
 
-  return Promise.resolve({
+  return {
     statusCode: 200,
-    body: 'Cloudwatch event successfully triggered!',
-  });
+    body: `Cloudwatch event ${event.id} successfully triggered!`,
+  };
 };
