@@ -25,7 +25,7 @@
     "aws-sdk": "^2.1172.0"
   },
   "devDependencies": {
-    "@dvsa/eslint-config-ts": "^2.3.0",
+    "@dvsa/eslint-config-ts": "^3.0.0",
     "@types/aws-lambda": "^8.10.78",
     "@types/jest": "^28.1.4",
     "@types/node": "^16.10.2",

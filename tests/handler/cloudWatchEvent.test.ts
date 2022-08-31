@@ -12,6 +12,6 @@ describe('Test CloudWatch Event Lambda Function', () => {
     const res: Record<string, unknown> = await handler(eventMock, contextMock);
 
     expect(res.statusCode).toBe(200);
-    expect(res.body).toEqual('Cloudwatch event successfully triggered!');
+    expect(res.body).toBe('Cloudwatch event successfully triggered!');
   });
 });
