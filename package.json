@@ -1,6 +1,6 @@
 {
   "name": "dvsa-lambda-starter",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A package to act as a starter for typescript lambdas",
   "main": "index.js",
   "scripts": {
@@ -50,6 +50,6 @@
     "winston": "^3.6.0"
   },
   "engines": {
-    "node": "^14.17.3"
+    "node": "^16.17.1"
   }
 }
