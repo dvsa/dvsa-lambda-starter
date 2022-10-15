@@ -4,9 +4,9 @@ A starting pattern for AWS lambda in Typescript
 
 **Requirements**
 
-- node v14.17.3
+- node v16.17.1 (Note if still using node 14 please checkout tag 1.0.0 and consider upgrading your runtime)
 - [SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
-- npm 7+
+- npm 8+
 
 **Prerequisites**
 - Create a `.env`
