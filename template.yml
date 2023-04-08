@@ -20,7 +20,7 @@ Resources:
       Properties:
         CodeUri: src/handler/
         Handler: post.handler
-        Runtime: nodejs14.x
+        Runtime: nodejs16.x
         Events:
           PostLambdaApi:
             Type: Api
@@ -33,7 +33,7 @@ Resources:
       Properties:
         CodeUri: src/handler/
         Handler: cloudWatchEvent.handler
-        Runtime: nodejs14.x
+        Runtime: nodejs16.x
         Events:
           CWEventLambdaSchedule:
             Type: Schedule
