@@ -22,4 +22,14 @@ describe('Test Post Lambda Function', () => {
     expect(res.statusCode).toBe(201);
     expect(res.body).toEqual(JSON.stringify({ body }));
   });
+  test('should return 400 if no request body is provided', async () => {
+    const eventMock: APIGatewayProxyEvent = <APIGatewayProxyEvent> {
+    };
+    const result = await handler(eventMock);
+
+    expect(result.statusCode).toBe(400);
+    expect(result.body).toStrictEqual(JSON.stringify({
+      message: 'Missing body',
+    }));
+  });
 });
