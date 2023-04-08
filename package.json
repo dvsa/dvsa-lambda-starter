@@ -23,8 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.1213.0",
-    "npm": "^9.6.4",
-    "sandbox": "^0.8.6"
+    "npm": "^9.6.4"
   },
   "devDependencies": {
     "@dvsa/eslint-config-ts": "^3.0.0",
@@ -52,6 +51,6 @@
     "winston": "^3.6.0"
   },
   "engines": {
-    "node": "^14.17.3"
+    "node": "^16.17.1"
   }
 }
