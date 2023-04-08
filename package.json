@@ -22,7 +22,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.1189.0"
+    "aws-sdk": "^2.1213.0",
+    "npm": "^9.6.4"
   },
   "devDependencies": {
     "@dvsa/eslint-config-ts": "^3.0.0",
