@@ -22,7 +22,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.1213.0",
+    "aws-sdk": "^2.1338.0",
     "npm": "^9.6.4"
   },
   "devDependencies": {
