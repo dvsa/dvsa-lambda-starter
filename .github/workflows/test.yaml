@@ -13,7 +13,7 @@ jobs:
           node-version: '16'
           cache: 'npm'
       - name: update npm dependency
-        run: npm i -g npm@8
+        run: npm i -g npm@9
       - name: Install dependencies
         run: npm ci
       - name: Run lint
