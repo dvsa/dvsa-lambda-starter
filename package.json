@@ -22,7 +22,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.1213.0"
     "aws-sdk": "^2.1353.0",
     "fs": "0.0.1-security",
     "node-gyp": "^9.3.1"

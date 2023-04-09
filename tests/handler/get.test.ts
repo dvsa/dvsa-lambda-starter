@@ -22,4 +22,14 @@ describe('Test Get Lambda Function', () => {
     expect(res.statusCode).toBe(200);
     expect(res.body).toEqual(JSON.stringify({ queryParams: queryStringParameters }));
   });
+
+  test('should return 400 if no query string parameters are provided', async () => {
+    const eventMock: APIGatewayProxyEvent = <APIGatewayProxyEvent> {};
+    const result = await handler(eventMock);
+
+    expect(result.statusCode).toBe(400);
+    expect(result.body).toStrictEqual(JSON.stringify({
+      message: 'Missing query string parameters',
+    }));
+  });
 });
