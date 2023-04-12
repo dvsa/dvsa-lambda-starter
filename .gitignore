@@ -94,7 +94,7 @@ dist
 # Serverless directories
 .serverless/
 .aws-sam/build
-
+.aws-sam
 # FuseBox cache
 .fusebox/
 
@@ -106,3 +106,5 @@ dist
 
 # MAC files
 .DS_Store
+
+
